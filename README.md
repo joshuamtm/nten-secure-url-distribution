@@ -189,8 +189,8 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) for deta
 ## 💬 Support
 
 - **Documentation**: See `/docs` folder for detailed guides
-- **Issues**: [Report bugs or request features](https://github.com/yourusername/nten-secure-url-distribution/issues)
-- **Discussions**: [Join the conversation](https://github.com/yourusername/nten-secure-url-distribution/discussions)
+- **Issues**: [Report bugs or request features](https://github.com/joshuamtm/nten-secure-url-distribution/issues)
+- **Discussions**: [Join the conversation](https://github.com/joshuamtm/nten-secure-url-distribution/discussions)
 
 ## 🚦 Status
 

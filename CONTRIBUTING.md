@@ -5,7 +5,7 @@ First off, thank you for considering contributing to this project! This tool hel
 ## How Can I Contribute?
 
 ### Reporting Bugs
-- Check if the bug has already been reported in [Issues](https://github.com/yourusername/nten-secure-url-distribution/issues)
+- Check if the bug has already been reported in [Issues](https://github.com/joshuamtm/nten-secure-url-distribution/issues)
 - If not, create a new issue with:
   - Clear description of the problem
   - Steps to reproduce
@@ -13,7 +13,7 @@ First off, thank you for considering contributing to this project! This tool hel
   - Screenshots if applicable
 
 ### Suggesting Enhancements
-- Check existing [Issues](https://github.com/yourusername/nten-secure-url-distribution/issues) for similar suggestions
+- Check existing [Issues](https://github.com/joshuamtm/nten-secure-url-distribution/issues) for similar suggestions
 - Create a new issue with tag `enhancement`
 - Describe the feature and its benefits for nonprofit users
 
