@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title><?= appTitle ?></title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; padding: 2rem; max-width: 520px; margin: auto; }
+    .card { border: 1px solid #ddd; padding: 1.5rem; border-radius: 8px; }
+    h1 { font-size: 1.25rem; margin: 0 0 1rem; }
+    label { display:block; margin-bottom: .5rem; }
+    input[type="text"] { width:100%; padding:.75rem; border:1px solid #ccc; border-radius:6px; font-size:1rem; }
+    button { margin-top: 1rem; padding:.75rem 1rem; border:0; border-radius:6px; cursor:pointer; }
+    .muted { color:#666; font-size:.9rem; }
+  </style>
+  <!-- reCAPTCHA v2 (checkbox or invisible). Replace SITE_KEY. If you don't want CAPTCHA, remove both script+widget. -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+  <div class="card">
+    <h1>Retrieve Your Program Link</h1>
+    <form method="post" action="">
+      <label for="code">Access Code</label>
+      <input id="code" name="code" type="text" autocomplete="one-time-code" required maxlength="64" placeholder="e.g., A9Z3-T8QK-2FJ5"/>
+      <input type="hidden" name="ua" id="ua"/>
+      <div class="g-recaptcha" data-sitekey="PUT_YOUR_SITE_KEY_HERE"></div>
+      <button type="submit">Get My Link</button>
+    </form>
+    <p class="muted">We never display anyone else's link. Recheck your code if it doesn't work.</p>
+  </div>
+  <script>
+    document.getElementById('ua').value = navigator.userAgent || '';
+    document.getElementById('code').focus();
+  </script>
+</body>
+</html>

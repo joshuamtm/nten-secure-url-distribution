@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Program Link</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; padding: 2rem; max-width: 520px; margin: auto; }
+    .ok, .err { border:1px solid #ddd; padding:1.5rem; border-radius:8px; }
+    .ok { border-color:#cfc; }
+    .err { border-color:#f6c; }
+    a { word-break: break-all; }
+  </style>
+</head>
+<body>
+  <? if (success) { ?>
+    <div class="ok">
+      <h1>Your Link</h1>
+      <p><a href="<?= url ?>" rel="noopener noreferrer"><?= url ?></a></p>
+      <p>Bookmark it for next time.</p>
+    </div>
+  <? } else { ?>
+    <div class="err">
+      <h1>Hmm…</h1>
+      <p><?= errorMessage ?></p>
+      <p><a href="<?= ScriptApp.getService().getUrl() ?>">Try again</a></p>
+    </div>
+  <? } ?>
+</body>
+</html>
